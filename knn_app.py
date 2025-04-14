@@ -12,7 +12,7 @@ def load_data():
     from imblearn.over_sampling import SMOTE
 
     # Load raw data
-    df = pd.read_csv("/content/drive/My Drive/disease_features.csv")
+    df = pd.read_csv("disease_features.csv")
     df['Combined'] = df['Risk Factors'].fillna('') + ' ' + df['Symptoms'].fillna('') + ' ' + df['Signs'].fillna('')
 
     # TF-IDF
